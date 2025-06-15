@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StartUp H</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="user-icon">👤</span>
+      <span class="close-icon">✖</span>
+      <span class="brand-name">StartUp H</span>
+    </div>
+
+    <div class="nav-right">
+      <nav class="nav-links" id="navLinks">
+        <a href="#">HOME</a>
+        <a href="#">PROJECTS</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">PARTNERSHIPS</a>
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content"></main>
+
+  <div class="hamburger-menu" id="hamburgerMenu">
+    <div class="hamburger-columns">
+      <!-- LEFT SIDE -->
+      <div class="menu-col left">
+        <div class="left-content">
+          <h2>Project Portal</h2>
+          <ul>
+            <li><a href="#">会社情報</a></li>
+            <li><a href="#">イベントスケジュール</a></li>
+            <li><a href="#">ミッション</a></li>
+            <li><a href="#">プロジェクト</a></li>
+            <li><a href="#">お知らせ・ニュース</a></li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="menu-col right">
+        <h2>StartUp Lab</h2>
+        <ul>
+          <li><a href="#">IR情報</a></li>
+          <li><a href="#">ブログ</a></li>
+          <li><a href="#">お問い合わせフォーム</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">寄付 / ボランティア</a></li>
+        </ul>
+        <div class="menu-close" id="menuClose">✖</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const hamburgerMenu = document.getElementById("hamburgerMenu");
+    const menuClose = document.getElementById("menuClose");
+
+    hamburger.addEventListener("click", () => {
+      hamburgerMenu.style.display = "flex";
+    });
+
+    menuClose.addEventListener("click", () => {
+      hamburgerMenu.style.display = "none";
+    });
+  </script>
+</body>
+</html>
