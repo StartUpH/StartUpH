@@ -50,8 +50,9 @@
 
   .hero-banner {
     width: 100%;
-    height: 45vh; /* Adjust as needed: 60% of the viewport height */
+    height: 45vh;
     overflow: hidden;
+    margin-bottom: -18vh;
   }
   
   .hero-banner img {
@@ -240,7 +241,8 @@
   /* === Hero Section === */
   .hero {
     background: none;
-    padding: 1rem 1rem 15rem; 
+    padding: 10rem 1rem 4rem; 
+    margin-top: -5rem;
   }
   
   .hero h1 {
@@ -259,8 +261,14 @@
   .featured h2,
   .news h2,
   .cta h2 {
-    color: #1B4332;
+    color: #345a3b;
     font-weight: 700;
+    padding-top: -10rem;
+    margin-top: -3rem;
+  }
+  .cta .btn-primary{
+    color: #ffd572;
+    background-color: #0b602c;
   }
 /* Reset & Global */
 * { margin:0; padding:0; box-sizing:border-box; }
