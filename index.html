@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>StartUp H</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <header class="navbar">
@@ -23,23 +28,19 @@
       <nav class="nav-links" id="navLinks">
         <a href="#">MISSION</a>
         <a href="#">PROJECTS</a>
-        <a href="#">ABOUT US</a>
+        <a href="#">ABOUT US</a>
         <a href="#">PARTNERSHIPS</a>
       </nav>
 
       <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
     </div>
   </header>
 
-  <main class="main-content"></main>
-
+  <!-- Hamburger fullscreen menu -->
   <div class="hamburger-menu" id="hamburgerMenu">
     <div class="hamburger-columns">
-      <!-- LEFT SIDE -->
       <div class="menu-col left">
         <div class="left-content">
           <h2>Project Portal</h2>
@@ -58,14 +59,13 @@
         </div>
       </div>
 
-      <!-- RIGHT SIDE -->
       <div class="menu-col right">
         <h2>StartUp Lab</h2>
         <ul>
           <li><a href="#">IR情報</a></li>
           <li><a href="#">ブログ</a></li>
           <li><a href="#">お問い合わせ<br>フォーム</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Contact Us</a></li>
           <li><a href="#">FAQ</a></li>
           <li><a href="#">寄付<br>ボランティア</a></li>
         </ul>
@@ -74,54 +74,54 @@
     </div>
   </div>
 
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const hamburgerMenu = document.getElementById("hamburgerMenu");
-    const menuClose = document.getElementById("menuClose");
+  <!-- Hero banner image -->
+  <section class="hero-banner">
+    <img src="ex.jpg" alt="StartUpH Banner" />
+  </section>
 
-    hamburger.addEventListener("click", () => {
-      hamburgerMenu.style.display = "flex";
-    });
-
-    menuClose.addEventListener("click", () => {
-      hamburgerMenu.style.display = "none";
-    });
-  </script>
-
-<section class="hero-banner">
-  <img src="ex.jpg" alt="StartUpH Banner">
-</section>
-
-<section class="hero">
+  <!-- Hero section text -->
+  <section class="hero">
     <div class="hero-content container">
       <h1>Innovate. Create. Transform.</h1>
-      <p>StartUp H is at the forefront of technological innovation, driving change through groundbreaking projects and commitment to excellence.</p>
+      <p>
+        StartUp H is at the forefront of technological innovation, driving
+        change through groundbreaking projects and commitment to excellence.
+      </p>
     </div>
   </section>
 
+  <!-- Our mission -->
   <section id="about" class="mission section">
     <div class="container">
       <h2>Our Mission</h2>
-      <p>At StartUp H, our mission is to empower businesses and individuals through cutting‑edge technology solutions. We strive to create a future where innovation is accessible to all, fostering growth and positive impact.</p>
+      <p>
+        At StartUp H, our mission is to empower businesses and individuals
+        through cutting‑edge technology solutions. We strive to create a
+        future where innovation is accessible to all, fostering growth and
+        positive impact.
+      </p>
     </div>
   </section>
 
+  <!-- Featured Projects -->
   <section id="projects" class="featured section">
     <div class="container">
       <h2>Featured Projects</h2>
       <div class="card-grid">
         <div class="card">
-          <img src="office.jpg" alt="Research lab">
+          <img src="lab.jpg" alt="Research lab" />
           <h3>チイラボ</h3>
-          <p>子供たちの成長をサポートされながら社会課題を解決するロボット開発と、地域社会への貢献を目指す研究室</p>
+          <p>
+            子供たちの成長をサポートされながら社会課題を解決するロボット開発と、地域社会への貢献を目指す研究室
+          </p>
         </div>
         <div class="card">
-          <img src="smartcity.jpg" alt="Smart city skyline">
+          <img src="trash.jpg" alt="Smart city skyline" />
           <h3>新ゴミ箱</h3>
           <p>Developing smart city solutions for enhanced urban living.</p>
         </div>
         <div class="card">
-          <img src="solar.jpg" alt="Solar panels field">
+          <img src="makeup.jpg" alt="Cosmetics" />
           <h3>化粧品</h3>
           <p>Pioneering sustainable energy solutions for a greener future.</p>
         </div>
@@ -129,28 +129,37 @@
     </div>
   </section>
 
+  <!-- News -->
   <section id="news" class="news section">
     <div class="container">
       <h2>Latest News</h2>
       <div class="news-list">
         <article class="news-item">
           <div class="news-text">
-            <h3>StartUp H Announces Company</h3>
-            <p>In a landmark move, StartUp H has partnered with a leading technology company to expand its reach and impact in the industry.</p>
+            <h3>StartUp H Announces Company</h3>
+            <p>
+              In a landmark move, StartUp H has partnered with a leading
+              technology company to expand its reach and impact in the
+              industry.
+            </p>
           </div>
-          <img src="handshake.jpg" alt="Handshake">
+          <img src="handshake.jpg" alt="Handshake" />
         </article>
         <article class="news-item">
           <div class="news-text">
-            <h3>New Funding Round Fuels Innovation at StartUp H</h3>
-            <p>StartUp H secures a significant funding round, enabling further development of its innovative projects and expansion of its team.</p>
+            <h3>New Funding Round Fuels Innovation at StartUp H</h3>
+            <p>
+              StartUp H secures a significant funding round, enabling further
+              development of its innovative projects and expansion of its team.
+            </p>
           </div>
-          <img src="team.jpg" alt="Team meeting">
+          <img src="team.jpg" alt="Team meeting" />
         </article>
       </div>
     </div>
   </section>
 
+  <!-- Call to action -->
   <section id="get-started" class="cta section">
     <div class="container">
       <h2>Ready to Innovate with Us?</h2>
@@ -158,6 +167,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-links">
       <div><a href="#">Privacy Policy</a></div>
@@ -167,8 +177,29 @@
       <a href="#twitter">🐦</a>
       <a href="#linkedin">🔗</a>
     </div>
-    <div class="container copy">© 2025 StartUp H. All rights reserved.</div>
+    <div class="container copy">© 2025 StartUp H. All rights reserved.</div>
   </footer>
 
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const menuClose = document.getElementById('menuClose');
+
+    hamburger.addEventListener('click', () => {
+      hamburgerMenu.style.display = 'flex';
+      requestAnimationFrame(() => {
+        hamburgerMenu.style.opacity = '1';
+        hamburgerMenu.style.transform = 'translateY(0)';
+      });
+    });
+
+    menuClose.addEventListener('click', () => {
+      hamburgerMenu.style.opacity = '0';
+      hamburgerMenu.style.transform = 'translateY(-20px)';
+      setTimeout(() => {
+        hamburgerMenu.style.display = 'none';
+      }, 350);
+    });
+  </script>
 </body>
 </html>
