@@ -3,22 +3,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Chiron Sung HK', sans-serif;
+    font-family: 'Noto Serif Japanese', sans-serif;
   }
   body {
-    background-color: #c3dea6;
+    background-color: #f8fff1;
     color: #1B4332;
     line-height: 1.6;
   }
-  
+
   /* === Navbar === */
   .navbar {
+    margin-top: -20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fdf9f9;
-    padding: 1rem 2rem;
+    background-color: #fbfbfb;
+    padding: 1rem 3rem;
     position: relative;
+    height: 80px;
   }
   .nav-links {
     display: flex;
@@ -29,8 +31,8 @@
     position: relative;
     text-decoration: none;
     color: #1B4332;
-    padding-bottom: 4px;
-    font-weight: 500;
+    padding-bottom: 3px;
+    font-weight: 800;
     transition: color 0.3s;
   }
   .nav-links a::after {
@@ -46,6 +48,11 @@
   }
   .nav-links a:hover::after {
     width: 100%;
+  }
+
+  .logo img {
+    width: 96px; 
+    height: auto; 
   }
 
   .hero-banner {
@@ -166,6 +173,8 @@
   width: 100%;
 }
 
+
+
 /* === Social Icons === */
 .social-icons {
   display: flex;
@@ -240,6 +249,11 @@
   color: #14532D;
 }
 
+#projects {
+  background-color: #f0f0f0; /* light grey */
+  padding: 60px 0; /* optional: adds spacing above and below */
+}
+
   
   /* === Hero Section === */
   .hero {
@@ -282,7 +296,7 @@
   }
 /* Reset & Global */
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:Chiron Sung HK, sans-serif; background:#c3dea6; color:#eef2f7; line-height:1.6; }
+body { font-family:Noto Serif Japanese, sans-serif; background:#ffffff; color:#eef2f7; line-height:1.6; }
 .container { width:90%; max-width:1200px; margin:0 auto; }
 
 /* Header */
